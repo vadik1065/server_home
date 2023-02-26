@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <?php include './content/autorisation.php'; ?>
-    <script src="./scripts/autorisation.js"></script>
+    <?php include './view/content/autorisation.php'; ?>
+    <script src="./control/mainControl.js"></script>
 </body>
 
 </html>
