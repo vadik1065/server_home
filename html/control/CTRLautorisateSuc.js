@@ -1,4 +1,7 @@
+// CIBTROLS AUTORISATION SUCCESS
+
 (() => {
+  // отправка изминения состояния
   const dispatchState = () => {
     const event = new CustomEvent("change_state", {
       bubbles: false,

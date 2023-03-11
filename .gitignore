@@ -2,3 +2,4 @@ package-lock.json
 node_modules
 html/model/_password.json
 .vscode
+uploads

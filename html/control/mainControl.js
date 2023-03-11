@@ -16,8 +16,10 @@
   document.addEventListener("change_state", (e) => {
     let oldElem = document.getElementById("content-" + window.globalThis.CURRENT_STATE);
     oldElem.classList.add("hide");
+
     let newState = e.detail.CURRENT_STATE;
     window.globalThis.CURRENT_STATE = newState;
+
     let newElem = document.getElementById("content-" + window.globalThis.CURRENT_STATE);
     newElem.classList.remove("hide");
   });

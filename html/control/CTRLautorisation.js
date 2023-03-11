@@ -1,14 +1,15 @@
+// CONTROL AUTORISATION
+
 (() => {
   let autorisactSec = document.getElementById("autorisation");
+
   autorisactSec.addEventListener("submit", (e) => {
     e.preventDefault();
+
     let target = e.target;
     let writtenPass = target.querySelector("input[type = password]").value;
     let name = target.name;
-    let formInfo = {
-      name: name,
-      password: writtenPass,
-    };
+    let formInfo = { name: name, password: writtenPass };
 
     fetch("../model/autorisation.php", { method: "post", body: JSON.stringify(formInfo) }).then(
       async (response) => {
