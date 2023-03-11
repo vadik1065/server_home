@@ -6,7 +6,7 @@
     let file = e.currentTarget.querySelector("input[type = file]").files[0];
     let data = new FormData();
     data.append("file", file);
-    data.append("name", "f1.zip");
+    data.append("name", file.name);
 
     fetch("../../model/saveFile.php", { method: "POST", body: data });
   });
