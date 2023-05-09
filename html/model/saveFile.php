@@ -21,10 +21,10 @@ try {
       throw new RuntimeException('Unknown errors.');
   }
 
-  // You should also check filesize here. 
-  if ($_FILES["$nameFile"]['size'] > 1000000) {
-    throw new RuntimeException('Exceeded filesize limit.');
-  }
+  // // You should also check filesize here. 
+  // if ($_FILES["$nameFile"]['size'] > 1000000) {
+  //   throw new RuntimeException('Exceeded filesize limit.');
+  // }
 
   // скачивание файла
   chmod("../../uploads/$nameFile", 0777);

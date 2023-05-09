@@ -1,0 +1,12 @@
+section#web-filesystem {
+  height: 350px;
+  width: 300px;
+  background: linear-gradient(#6d9193, #94d9f0);
+  margin: auto;
+  margin-top: calc(50vh - 175px);
+  padding: 15px 30px;
+}
+.add-files button {
+  margin-top: 20px;
+  padding: 3px 5px;
+}

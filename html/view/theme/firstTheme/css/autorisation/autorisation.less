@@ -1,0 +1,58 @@
+@import "../varaible.less";
+
+section#autorisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.user {
+  padding: 10px 15px;
+  margin: 30px;
+  height: 330px;
+  min-width: 230px;
+  background: linear-gradient(@thirdColor, @secondColor);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 7px 5px 3px @thirdColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .avatar {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+  }
+
+  .name {
+    margin: 15px auto;
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      margin-top: 10px;
+    }
+  }
+
+  input {
+    margin: 5px auto;
+    padding: 5px 7px;
+    font-size: 17px;
+    background: white;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px #000;
+  }
+}
